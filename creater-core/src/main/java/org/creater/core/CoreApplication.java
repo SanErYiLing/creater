@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableDubbo
-//@MapperScan("org.dubbo.*.dao")
+@MapperScan("org.creater.core.*.dao")
 public class CoreApplication {
 
     public static void main( String[] args )
