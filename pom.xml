@@ -78,6 +78,18 @@
 
 
 
+			<!--  local  -->
+			<dependency>
+			  <groupId>com.san</groupId>
+			  <artifactId>creater-api</artifactId>
+			  <version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+			  <groupId>com.san</groupId>
+			  <artifactId>creater-common</artifactId>
+			  <version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
 
 		</dependencies>
 
@@ -91,6 +103,8 @@
 
 	<modules>
 		<module>creater-core</module>
+		<module>creater-api</module>
+		<module>creater-common</module>
 	</modules>
 
 

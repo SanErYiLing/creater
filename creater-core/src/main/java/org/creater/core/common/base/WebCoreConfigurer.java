@@ -5,7 +5,7 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistration
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@Configuration
+//@Configuration
 public class WebCoreConfigurer implements WebMvcConfigurer{
 
     @Override
@@ -14,12 +14,9 @@ public class WebCoreConfigurer implements WebMvcConfigurer{
         InterceptorRegistration registration = registry.addInterceptor(new WebInterceptor());
         registration.addPathPatterns("/**");                      //所有路径都被拦截
         registration.excludePathPatterns(                         //添加不拦截路径
-                                         "你的登陆路径",            //登录
-                                         "/**/*.html",            //html静态资源
-                                         "/**/*.js",              //js静态资源
-                                         "/**/*.css",             //css静态资源
-                                         "/**/*.woff",
-                                         "/**/*.ttf"
-                                         );    
+                                         "/sys/login"
+                                         );
+		// 拦截配置
+//        registration.addPathPatterns("/**");
     }
 }

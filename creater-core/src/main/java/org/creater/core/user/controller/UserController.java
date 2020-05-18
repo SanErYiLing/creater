@@ -28,9 +28,5 @@ public class UserController {
 		return userService.list();
 	}
 	
-	
-	@PostMapping("/login")
-	public Object login() {
-		return userService.list();
-	}
+
 }

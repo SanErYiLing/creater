@@ -2,8 +2,11 @@ package org.creater.core.user.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
+
+import javax.validation.constraints.NotBlank;
 
 /**
  * <p>
@@ -13,6 +16,7 @@ import java.io.Serializable;
  * @author author
  * @since 2020-05-11
  */
+@TableName("sys_user")
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -26,6 +30,7 @@ public class User implements Serializable {
     /**
      * 登陆名称
      */
+    @NotBlank(message="登陆名称不能为空")
     @TableField("username")
     private String username;
 

@@ -9,11 +9,8 @@
 		<artifactId>creater-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.san</groupId>
 	<artifactId>creater-core</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>creater-core</name>
-	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -95,5 +92,14 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+			  <groupId>com.san</groupId>
+			  <artifactId>creater-api</artifactId>
+		</dependency>
+			<dependency>
+			  <groupId>com.san</groupId>
+			  <artifactId>creater-common</artifactId>
+			</dependency>		
 	</dependencies>
 </project>
